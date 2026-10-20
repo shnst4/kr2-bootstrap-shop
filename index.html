@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная - Converse Shop</title>
-    <!-- Локальное подключение Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Свои стили -->
     <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body class="bg-light">
-    <!-- Навигация -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-brand-dark">
+      <!--container ограничивает ширину и центрирует-->
       <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">Converse Shop</a>
+        <!--Бургерная кнопка на мобильных экранах-->
         <button
           class="navbar-toggler"
           type="button"
@@ -22,9 +21,11 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!--класс collapse позволяет сворачивать меню-->
         <div class="collapse navbar-collapse" id="mainNavbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
+              <!--active класс - указывает на текущую страницу-->
               <a class="nav-link active" href="index.html">Главная</a>
             </li>
             <li class="nav-item">
@@ -41,7 +42,6 @@
       </div>
     </nav>
 
-    <!-- Шапка -->
     <header class="bg-brand-header text-white py-4">
       <div class="container">
         <div class="row align-items-center">
@@ -49,14 +49,13 @@
             <h1 class="h3 mb-1">Converse Shop</h1>
             <p class="mb-0 opacity-75">Оригинальная обувь Converse</p>
           </div>
-          <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+          <div class="col-12 col-md-4 text-md-end mt-3">
             <span class="badge bg-light text-primary">КР №2</span>
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Hero-блок с каруселью -->
     <section class="container my-5">
       <div class="row align-items-center g-4">
         <div class="col-12 col-lg-6">
@@ -69,11 +68,7 @@
           >
         </div>
         <div class="col-12 col-lg-6">
-          <div
-            id="heroCarousel"
-            class="carousel slide shadow-sm"
-            data-bs-ride="carousel"
-          >
+          <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button
                 type="button"
@@ -97,7 +92,7 @@
                 <img
                   src="img/blue_converse-no-bg.png"
                   class="d-block w-100 bg-light"
-                  alt="Converse 1"
+                  alt="Синие кеды Converse"
                 />
               </div>
               <div class="carousel-item">
@@ -140,7 +135,6 @@
       </div>
     </section>
 
-    <!-- Преимущества -->
     <section class="container my-5">
       <h2 class="text-center mb-4">Преимущества</h2>
       <div class="row g-4">
@@ -165,7 +159,6 @@
       </div>
     </section>
 
-    <!-- Популярные товары -->
     <section class="container my-5">
       <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="mb-0">Популярные товары</h2>
@@ -173,14 +166,12 @@
       </div>
 
       <div class="row g-4">
-        <!-- Карточка 1 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 border-0">
             <img
               src="img/item_1_no_bg.png"
               class="card-img-top p-3 bg-light"
               alt="Chuck 70"
-              style="height: 200px; object-fit: contain"
             />
             <div class="card-body d-flex flex-column">
               <div
@@ -198,21 +189,19 @@
           </div>
         </div>
 
-        <!-- Карточка 2 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 border-0">
             <img
               src="img/item_2_no_bg.png"
               class="card-img-top p-3 bg-light"
               alt="All Star Low"
-              style="height: 200px; object-fit: contain"
             />
             <div class="card-body d-flex flex-column">
               <div
                 class="d-flex justify-content-between align-items-start mb-2"
               >
                 <h3 class="h5 card-title mb-0">All Star Low</h3>
-                <span class="badge bg-warning text-dark">Хит</span>
+                <span class="badge bg-warning">Хит</span>
               </div>
               <p class="card-text text-muted small">
                 Низкие кеды на каждый день.
@@ -223,14 +212,12 @@
           </div>
         </div>
 
-        <!-- Карточка 3 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 border-0">
             <img
               src="img/item_3_no_bg.png"
               class="card-img-top p-3 bg-light"
               alt="Run Star Hike"
-              style="height: 200px; object-fit: contain"
             />
             <div class="card-body d-flex flex-column">
               <div
@@ -250,7 +237,6 @@
       </div>
     </section>
 
-    <!-- Футер -->
     <footer class="bg-dark text-white py-4 mt-5">
       <div class="container">
         <div class="row align-items-center g-3">
@@ -269,7 +255,6 @@
       </div>
     </footer>
 
-    <!-- Локальное подключение JS Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

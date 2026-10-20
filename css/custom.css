@@ -1,50 +1,56 @@
-.placeholder-image {
-  min-height: 320px;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.card-img-top {
-  height: 180px;
-  object-fit: cover;
+main {
+  flex: 1;
 }
 
-/* Фирменные цвета Converse Shop */
 .bg-brand-dark {
-  background-color: rgb(32, 48, 66) !important; /* Твой темно-синий */
-  color: white !important;
+  background-color: rgb(32, 48, 66);
 }
-
 .bg-brand-header {
-  background-color: rgb(92, 136, 189) !important; /* Твой голубой */
-  color: white !important;
+  background-color: rgb(92, 136, 189);
 }
-
+.text-brand-dark {
+  color: rgb(32, 48, 66);
+}
 .btn-brand {
   background-color: rgb(32, 48, 66);
   color: white;
-  border: 2px solid rgb(32, 48, 66);
+  border: 1px solid rgb(32, 48, 66);
 }
-
 .btn-brand:hover {
   background-color: white;
   color: rgb(32, 48, 66);
   border-color: rgb(32, 48, 66);
 }
 
-/* Красивые карточки */
+/* Анимация карточек */
 .card {
   transition:
     transform 0.2s,
     box-shadow 0.2s;
 }
-
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Карусель - чтобы картинки не скакали */
+/* Изображения в карусели */
 .carousel-item img {
   height: 400px;
-  object-fit: cover;
-  border-radius: 12px;
+  object-fit: contain;
+}
+/* Изображения в карточках каталога */
+.card-img-top {
+  height: 200px;
+  object-fit: contain;
+}
+/* Большое изображение на странице товара */
+.product-image {
+  max-height: 400px;
+  object-fit: contain;
 }

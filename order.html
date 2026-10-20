@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заявка — Converse Shop</title>
-    <!-- Локальное подключение Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Свои стили -->
     <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body class="bg-light">
-    <!-- Навигация -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-brand-dark">
       <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">Converse Shop</a>
@@ -44,20 +41,18 @@
     <main class="container my-5">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8">
-          <div class="card shadow-sm border-0">
-            <!-- Шапка формы в фирменном цвете -->
+          <div class="card border-0">
             <div class="card-header bg-brand-dark text-white py-3">
               <h1 class="h4 mb-0">Форма заявки</h1>
             </div>
 
             <div class="card-body p-4">
               <div class="alert alert-info" role="alert">
-                Заполните форму. Поля со звёздочкой обязательны.
+                Заполните форму. Поля со звёздочкой обязательны. Если вы не
+                любите лосей, то любите хотя бы себя.
               </div>
 
-              <!-- Обычная форма. Валидация будет проверяться браузером, 
-                   а по нажатию на кнопку откроется модальное окно -->
-              <form id="orderForm">
+              <form action="order.html" method="get">
                 <div class="row g-3">
                   <div class="col-12 col-md-6">
                     <label for="order-name" class="form-label">Имя *</label>
@@ -137,13 +132,7 @@
                   </div>
 
                   <div class="col-12 d-flex gap-2 mt-4">
-                    <!-- Кнопка открывает модалку (но форма проверит required) -->
-                    <button
-                      class="btn btn-brand px-4"
-                      type="submit"
-                      data-bs-toggle="modal"
-                      data-bs-target="#successModal"
-                    >
+                    <button class="btn btn-brand px-4" type="submit">
                       Отправить заявку
                     </button>
                     <button class="btn btn-outline-dark" type="reset">
@@ -158,45 +147,6 @@
       </div>
     </main>
 
-    <!-- Модальное окно успеха -->
-    <div
-      class="modal fade"
-      id="successModal"
-      tabindex="-1"
-      aria-labelledby="successModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content border-0 shadow">
-          <div class="modal-header bg-brand-dark text-white">
-            <h5 class="modal-title" id="successModalLabel">Успех!</h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Закрыть"
-            ></button>
-          </div>
-          <div class="modal-body text-center py-4">
-            <h4 class="mb-3">Заявка отправлена! 🎉</h4>
-            <p class="text-muted">
-              Мы свяжемся с вами в ближайшее время для подтверждения заказа.
-            </p>
-          </div>
-          <div class="modal-footer justify-content-center border-0 pb-4">
-            <button
-              type="button"
-              class="btn btn-brand px-4"
-              data-bs-dismiss="modal"
-            >
-              Отлично
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Футер -->
     <footer class="bg-dark text-white py-4 mt-5">
       <div class="container">
         <div class="row align-items-center g-3">
@@ -215,7 +165,6 @@
       </div>
     </footer>
 
-    <!-- Локальное подключение JS Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

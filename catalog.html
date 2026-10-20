@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог — Converse Shop</title>
-    <!-- Локальное подключение Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- Свои стили -->
     <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body class="bg-light">
-    <!-- Навигация -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-brand-dark">
       <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">Converse Shop</a>
@@ -42,23 +39,19 @@
     </nav>
 
     <main class="container my-5">
-      <!-- Alert -->
-      <div class="alert alert-info shadow-sm" role="alert">
-        Выберите товар из каталога. Карточки оформлены с помощью компонента
-        Bootstrap <code>card</code>.
+      <div class="alert alert-info" role="alert">
+        Выберите товар из каталога. Доставим бесплатно и подарим чай под цвет
+        выбранной обуви.
       </div>
 
-      <!-- Заголовок и кнопка -->
       <div class="d-flex justify-content-between align-items-center mb-4">
         <h1 class="h2 mb-0 fw-bold">Каталог товаров</h1>
         <a class="btn btn-brand" href="order.html">Оставить заявку</a>
       </div>
 
-      <!-- Сетка карточек -->
       <div class="row g-4">
-        <!-- Карточка 1 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 border-0">
             <img
               src="img/item_1_no_bg.png"
               class="card-img-top p-3 bg-light"
@@ -77,25 +70,15 @@
               </p>
               <p class="fw-bold fs-5 mt-auto mb-3">8 990 руб.</p>
               <div class="d-flex gap-2">
-                <a class="btn btn-brand flex-grow-1" href="product.html"
-                  >Подробнее</a
-                >
-                <button
-                  class="btn btn-outline-dark"
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#orderModal"
-                >
-                  Заказать
-                </button>
+                <a class="btn btn-brand" href="product.html">Подробнее</a>
+                <a class="btn btn-outline-dark" href="order.html"> Заказать </a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Карточка 2 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 border-0">
             <img
               src="img/item_2_no_bg.png"
               class="card-img-top p-3 bg-light"
@@ -107,32 +90,22 @@
                 class="d-flex justify-content-between align-items-start mb-3"
               >
                 <h2 class="card-title h5 mb-0">Converse All Star Low</h2>
-                <span class="badge bg-warning text-dark">Хит</span>
+                <span class="badge bg-warning">Хит</span>
               </div>
               <p class="card-text text-muted small">
                 Низкие кеды, универсальная модель.
               </p>
               <p class="fw-bold fs-5 mt-auto mb-3">7 490 руб.</p>
               <div class="d-flex gap-2">
-                <a class="btn btn-brand flex-grow-1" href="product.html"
-                  >Подробнее</a
-                >
-                <button
-                  class="btn btn-outline-dark"
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#orderModal"
-                >
-                  Заказать
-                </button>
+                <a class="btn btn-brand" href="product.html">Подробнее</a>
+                <a class="btn btn-outline-dark" href="order.html"> Заказать </a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Карточка 3 -->
         <div class="col-12 col-md-6 col-lg-4">
-          <div class="card h-100 shadow-sm border-0">
+          <div class="card h-100 border-0">
             <img
               src="img/item_3_no_bg.png"
               class="card-img-top p-3 bg-light"
@@ -151,17 +124,8 @@
               </p>
               <p class="fw-bold fs-5 mt-auto mb-3">12 990 руб.</p>
               <div class="d-flex gap-2">
-                <a class="btn btn-brand flex-grow-1" href="product.html"
-                  >Подробнее</a
-                >
-                <button
-                  class="btn btn-outline-dark"
-                  type="button"
-                  data-bs-toggle="modal"
-                  data-bs-target="#orderModal"
-                >
-                  Заказать
-                </button>
+                <a class="btn btn-brand" href="product.html">Подробнее</a>
+                <a class="btn btn-outline-dark" href="order.html"> Заказать </a>
               </div>
             </div>
           </div>
@@ -169,79 +133,6 @@
       </div>
     </main>
 
-    <!-- Модальное окно -->
-    <div
-      class="modal fade"
-      id="orderModal"
-      tabindex="-1"
-      aria-labelledby="orderModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content border-0 shadow">
-          <div class="modal-header bg-brand-dark text-white">
-            <h2 class="modal-title h5" id="orderModalLabel">Быстрая заявка</h2>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Закрыть"
-            ></button>
-          </div>
-          <div class="modal-body p-4">
-            <p class="text-muted mb-4">
-              Оставьте контактные данные, и менеджер свяжется с вами для
-              уточнения деталей.
-            </p>
-            <form>
-              <div class="mb-3">
-                <label for="modal-name" class="form-label">Имя</label>
-                <input
-                  id="modal-name"
-                  type="text"
-                  class="form-control"
-                  placeholder="Ваше имя"
-                  required
-                />
-              </div>
-              <div class="mb-3">
-                <label for="modal-phone" class="form-label">Телефон</label>
-                <input
-                  id="modal-phone"
-                  type="tel"
-                  class="form-control"
-                  placeholder="+7 (900) 000-00-00"
-                  required
-                />
-              </div>
-              <div class="form-check mb-3">
-                <input
-                  id="modal-agree"
-                  class="form-check-input"
-                  type="checkbox"
-                  required
-                />
-                <label class="form-check-label" for="modal-agree">
-                  Согласен на обработку данных
-                </label>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer border-0">
-            <button
-              type="button"
-              class="btn btn-outline-dark"
-              data-bs-dismiss="modal"
-            >
-              Закрыть
-            </button>
-            <button type="button" class="btn btn-brand">Отправить</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Футер -->
     <footer class="bg-dark text-white py-4 mt-5">
       <div class="container">
         <div class="row align-items-center g-3">
@@ -260,7 +151,6 @@
       </div>
     </footer>
 
-    <!-- Локальное подключение JS Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
