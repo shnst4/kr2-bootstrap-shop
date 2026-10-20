@@ -6,3 +6,45 @@
   height: 180px;
   object-fit: cover;
 }
+
+/* Фирменные цвета Converse Shop */
+.bg-brand-dark {
+  background-color: rgb(32, 48, 66) !important; /* Твой темно-синий */
+  color: white !important;
+}
+
+.bg-brand-header {
+  background-color: rgb(92, 136, 189) !important; /* Твой голубой */
+  color: white !important;
+}
+
+.btn-brand {
+  background-color: rgb(32, 48, 66);
+  color: white;
+  border: 2px solid rgb(32, 48, 66);
+}
+
+.btn-brand:hover {
+  background-color: white;
+  color: rgb(32, 48, 66);
+  border-color: rgb(32, 48, 66);
+}
+
+/* Красивые карточки */
+.card {
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Карусель - чтобы картинки не скакали */
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
